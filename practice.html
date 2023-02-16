@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="mx-12">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li tabindex="0">
+                            <a class="justify-between">
+                                Parent
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li tabindex="0">
+                        <a>
+                            Parent
+                            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                            </svg>
+                        </a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn">Get started</a>
+            </div>
+        </div>
+    </header>
+    <main class="mt-10 mx-10">
+        <section class="flex flex-col md:flex-row lg:flex-row gap-5">
+            <div class="w-full md:w-[60%] lg:w-[60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+
+                <!-- card 1 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <!-- product image -->
+                        <img id="cart-1-productimg" src="img/coffee.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <!-- product name  -->
+                        <h2 class="card-title" id="cart-1-productname">Coffee</h2>
+                        <p>Coffee is best for removing sleep</p>
+                        <!-- product price  -->
+                        <p>Price $<span id="cart-1-productprice">100</span></p>
+                        <!-- product quantity -->
+                        <p>Quantity<span id="cart-1-productquantity">10</span></p>
+                        <div class="card-actions">
+                            <button id="cart-btn-1" class="btn btn-primary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <!-- product 2 image  -->
+                    <figure class="px-10 pt-10">
+                        <img id="cart-2-productimg" src="img/heart_js.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <!-- product 2 name  -->
+                        <h2 id="cart-2-productname" class="card-title">Heart</h2>
+                        <p>We lost Heart</p>
+                        <!-- product 2 price  -->
+                        <p>Price $<span id='cart-2-productprice'>200</span></p>
+                        <!-- product 2 quantity  -->
+                        <p>Quantity<span id="cart-2-productquantity">20</span></p>
+                        <!-- product 2 button -->
+                        <div class="card-actions">
+                            <button class="btn btn-primary" id='cart-btn-2'>Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <!-- product 3 image  -->
+                        <img id="cart-3-productimg" src="img/panda.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title" id="cart-3-productname">panda</h2>
+                        <p>Number of panda is extinct day by day</p>
+                        <p>Price $<span id="cart-3-productprice">1000</span>
+                        </p>
+                        <p>Quantity <span id="cart-3-productquantity">5</span></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary" id="cart-btn-3">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="img/umbrella.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Umbrella</h2>
+                        <p>Remember me when raining outside</p>
+                        <p>Price $10</p>
+                        <p>Quantity 5</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="img/coffee.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Coffee</h2>
+                        <p>Coffee is best for removing sleep</p>
+                        <p>Price $100</p>
+                        <p>Quantity 10</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full md:w-[40%] lg:w-[40%] p-5">
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr class="text-center">
+                                <th>No</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="container" class="text-center">
+                            <!-- row 1 -->
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="avatar">
+                                        <div class="w-12 rounded-full h-auto">
+                                            <img src="img/coffee.jpg" />
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Cy Ganderton</td>
+                                <td>Quality Control Specialist</td>
+                                <td>Blue</td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td>$<span id="total">00</span> </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    <div class="bg-blue-700 text-white p-2 shadow-xl text-center mt-2 rounded-lg">Total Amount:
+                        $<span class="font-bold" id="total">00</span></div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="practice.js"></script>
+</body>
+
+</html>
